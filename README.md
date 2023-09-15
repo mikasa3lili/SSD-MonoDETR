@@ -66,4 +66,4 @@ test:
 `python train_val.py --config ${CONFIG_FILE} -e`   
 
 # Acknowledgement
-Our project is developed based on [MonoDETR](https://github.com/ZrrSkywalker/MonoDETR), and the data processing of Waymo is follow the [DEVIANT](https://github.com/abhi1kumar/DEVIANT) Thanks for their excellence works!
+Our project is developed based on [MonoDETR](https://github.com/ZrrSkywalker/MonoDETR), and the data processing of Waymo is follow the [DEVIANT](https://github.com/abhi1kumar/DEVIANT) Thanks for their excellent works!
