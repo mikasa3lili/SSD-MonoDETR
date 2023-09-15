@@ -15,12 +15,12 @@ Pytorch 1.10.1+cu111
 
 # Installation
 a. Clone this repository:   
-`git clone https://github.com/mikasa3lili/SSD-MonoDETR`  
+`git clone https://github.com/mikasa3lili/SSD-MonoDETR`    
 `cd SSD-MonoDETR`  
 
 b. Create a conda environment and install:
-`conda create -n ssd-monodetr python=3.8`
-`conda activate ssd-monodetr`
+`conda create -n ssd-monodetr python=3.8`  
+`conda activate ssd-monodetr`  
 `conda install pytorch torchvision cudatoolkit`
 `pip install -r requirements.txt`
 `cd lib/models/monodetr/ops/`
