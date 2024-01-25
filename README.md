@@ -4,7 +4,7 @@
 
 Besides the unstable of the backbone, we find another reason: ranking mechanism in WSM loss. Due to the difficulty in predicting the scale of query points, the initial ranking mechanism is completely chaotic, which can easily lead to worse model training. Since we have enough GPUs to run our model many times at once, we have a high probability of achieving good results each time. But for those who can only run a few times or even once at a time, this is very difficult. Here, we have a solution: First, in monodetr.py(line 391), remove the ranking mechanism in WSM loss like this: weight_loss_w = loss_w #* pos_weight.cuda(). Then, change the wsm_loss_coef in ssd-monodetr.yaml to 0.6 and train the whole model. You can get a result(mod.) around 20(+-0.5) at around 150 epoch. Finally, reuse the ranking mechanism and train the model based on the best checkpoint.ckpt you have got in the first stage. Also, if possible, try to run more times at once.
 
-Our checkpoint.ckpt: waiting to be uploaded.
+Our checkpoint.ckpt: https://pan.baidu.com/s/1vQpqsxT9i8VQiZGEicMXCA  code：2mms
 
 Official implementation of the paper 'SSD-MonoDETR: Supervised Scale-aware Deformable Transformer for Monocular 3D Object Detection'.
                                
